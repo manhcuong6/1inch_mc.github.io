@@ -1,0 +1,67 @@
+article {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0px;
+}
+#private-key {
+  width: 400px;
+}
+.main-1, .main-2 {
+  background-color: lightblue;
+  width: 350px;
+}
+.balance {
+  font-size: 12px;
+  width: 100px;
+}
+.money {
+  margin: 10px 10px;
+}
+.body-main-1, .body-main-2 {
+  margin: 10px 50px;
+}
+.main-money {
+  display: flex;
+  
+}
+.main-1 {
+  margin-bottom: 10px;
+}
+.price {
+  padding-top: 20px;
+}
+.network-total {
+  display: flex;
+  flex-direction: column;
+}
+.network-1, .network-2, .network-3, .network-4 {
+  margin-bottom: 3px;
+}
+.network-total{
+  width: 65%;
+  float: left;
+}
+
+.button-dst-token{
+  width: 55px;
+  height: 40px;
+  margin: 7.5px;
+}
+.button-dst-token:hover {
+  background-color: red;
+}
+.setup-token-dst {
+  width: 100px;
+  height: 60px;
+  margin: 7.5px;
+}
+.top-quantity, .bot-quantity {
+  margin: 10px 0px;
+}
+.top-footer {
+  margin: 20px 100px;
+}
+.swap {
+  width: 150px;
+  padding: 5px 0px;
+}

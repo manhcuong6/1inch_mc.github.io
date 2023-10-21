@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="index_MC.css">
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>MC 1inch app</h1>
+      </div>
+      <div>
+        <div>
+          <span>Private Key:</span>
+          <span><input id="private-key" type="text" placeholder="Nhập Private Key">
+          </span>
+          <span>
+            <button id="private-key-import">Import</button>
+          </span>
+        </div>
+        <div id="address">Address:</div>
+      </div>
+      <div>
+        <h3>Wallet Balance</h3>
+        <div id = "eth-balance">ETH Balance: ...</div>
+        <div id ="usdt-balance">USDT Balance: ...</div>
+      </div>
+    </header>
+    <article>
+      <div>
+        <div class="main-1">
+          <div class="main-money">
+            <div><input class="money" type="text" placeholder="0.0" id="amount-in"></div>
+            <div class="body-main-1">
+              <div>
+                <select id="token-src">
+                  <option value="...">Token nguồn
+                  <option value="ETH">ETH
+                  <option value="USDT">USDT
+                </select>
+              </div>
+              <div>
+                <p class="balance" id="token-src-balance"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-2">
+          <div class="main-money">
+            <div><input class="money" type="text" placeholder="0.0" id = "amount-out"></div>
+            <div class="body-main-2">
+              <div>
+                <div id = "token-dst">Token đích</div>
+              </div>
+              <div>
+                <p class="balance" id="token-dst-balance">Balance</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="price" id="price">Price: </div>
+      </div>
+      <div class = "network-total">
+        <div class="network-1">
+          <button class="button-dst-token" value ="0x1f573d6fb3f13d689ff844b4ce37794d79a7ff1c">BNT</button>
+          <button class="button-dst-token" value ="0xba100000625a3754423978a60c9317c58a424e3D">BAL</button>
+          <button class="button-dst-token" value ="0x3432b6a60d23ca0dfca7761b7ab56459d9c964d0">FXS</button>
+          <button class="button-dst-token" value="0x767fe9edc9e0df98e07454847909b5e959d7ca0e">ILV</button>
+        </div>
+        <div class="network-2">
+          <button class="button-dst-token" value="0x5a98fcbea516cf06857215779fd812ca3bef1b32">LDO</button>
+          <button class="button-dst-token" value="0xd33526068d116ce69f19a9ee46f0bd304f21a51f">RPL</button>
+          <button class="button-dst-token" value="0xaf5191b0de278c7286d6c7cc6ab6bb8a73ba2cd6">STG</button>
+          <button class="button-dst-token" value="0x0391D2021f89DC339F60Fff84546EA23E337750f">BOND</button>
+        </div>
+        <div class="network-3">
+          <button class="button-dst-token">...</button>
+          <button class="button-dst-token">...</button>
+        </div>
+        <div class="network-4">
+          <button class="setup-token-dst">EDIT</button>
+        </div>
+      </div>
+    </article>
+    <footer>
+      <div class="top-footer">
+        <div>
+          <button class="swap">Swap</button>
+        </div>
+      </div>
+      <div>
+        <h3>Edit Swap</h3>
+        <div>
+          <span id="token-price">Price: </span>
+        </div>
+        <div>
+          <span>Slippage: </span>
+          <span><input class="slippage" type="text" placeholder="Nhập Slippage" id="slip"></span>
+        </div>
+        <div>
+          <span>Ví nhận: </span>
+          <select id="wallet-recv" >
+            <option value="">Chọn ví nhận</option>
+            <option value="0x6c6e583e453714b41f48bf4ee1adfd6c2c812dac">Binance</option>
+            <option value="0xcc03cdfc6f40a31ddbb8400e5e9b21b18072994e">Mexc</option>
+            <option value="0xfb616f9c2942b19862775796d07feab2b9d3b42e">Okx</option>
+          </select>
+          <input type="text" placeholder="Ví nhận" id = "wallet-recv-custom">
+        </div>
+      </div>
+      <div>
+        <h3>Edit gas</h3>
+        <div>
+          <span>maxPriorityFeePerGas recommend: </span>
+          <span id="priority-gas-rcm">...</span>
+        </div>
+        <div>
+          <span>maxFeePerGas recommend: </span>
+          <span id="gas-rcm">...</span>
+        </div>
+        <div class="bot-quantity">
+          <span>maxPriorityFeePerGas: </span>
+          <span><input class="quantity-2" type="text" placeholder="Nhập số lượng" id="priority-gas"></span></span>
+        </div>
+        <div>
+          <span>maxFeePerGas: </span>
+          <span><input class="quantity-3" type="text" placeholder="Nhập số lượng" id="gas"></span></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script type="module" src="./app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.6.0/dist/web3.min.js"></script>
+</html>
