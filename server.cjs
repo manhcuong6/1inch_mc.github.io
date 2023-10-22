@@ -75,7 +75,7 @@ async function swap(params){
  }
 app.use('/api-endpoint',express.json());
 app.post('/api-endpoint', async (req, res) => {
-    const postData = req.body; // Lấy dữ liệu từ yêu cầu POST
+    const postData = req.body; 
     let dataRes = await swap(postData)
     // console.log("final" , dataRes)
     // const responseData = {resData: dataRes };
